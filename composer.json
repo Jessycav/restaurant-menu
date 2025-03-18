@@ -1,0 +1,7 @@
+{
+    "name": "jess/restaurant-menu",
+    "description": "Projet d'un site affichant le menu d'un restaurant en utilisant PHP avec MongoDB",
+    "require": {
+        "mongodb/mongodb": "^1.8"
+    }
+}

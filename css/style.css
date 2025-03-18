@@ -1,0 +1,107 @@
+body {
+    background-color: black;
+    color: gold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('../img/Main_dishes/Background.jpg') no-repeat center center/contain;
+}
+
+.home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.home-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: gold;
+    z-index: 2;
+}
+
+header {
+    padding: 1.2rem;
+    background: gold;
+    color: black;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    background: gold;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: #d6c7a4;
+}
+
+section {
+    width: 80%;
+    margin: 1.5rem;
+    padding: 1.5rem;
+    border: 1px solid gold;
+    border-radius: 10px;
+}
+
+.menu-container {
+    width: 80%;
+    margin: 1.5rem;
+    padding: 1.2rem;
+    background: black;
+    color: gold;
+    border-radius: 0.8rem;
+    border: 1px solid gold;
+}
+
+.menu-section {
+    margin-bottom: 1.5rem;
+}
+
+.menu-section h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid gold;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-item {
+    margin: 0.5rem;
+}
+
+.menu-item p {
+    flex: 1;
+    text-align: center;
+    padding: 0.5rem;
+    color: white;
+}
+
+.price {
+    padding: 1rem;
+    color: white;
+}
