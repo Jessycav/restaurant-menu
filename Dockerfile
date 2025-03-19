@@ -13,6 +13,5 @@ RUN apt-get update && apt-get install -y libssl-dev \
     && pecl install mongodb \
     && docker-php-ext-enable mongodb
 
-
 # Exposer le port 80 (le port HTTP par défaut)
 EXPOSE 80
