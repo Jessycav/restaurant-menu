@@ -62,7 +62,7 @@ section {
 
 .menu-container {
     width: 80%;
-    margin: 1.5rem;
+    margin: 1.5rem 0;
     padding: 1.2rem;
     background: black;
     color: gold;
