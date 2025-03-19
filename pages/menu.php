@@ -1,7 +1,6 @@
 <?php
 include '../connection/db.php';
 
-
 $query = new MongoDB\Driver\Query([]);
 $rows = $mongoClient->executeQuery("$database.$collection", $query);
 $menu = iterator_to_array($rows);
