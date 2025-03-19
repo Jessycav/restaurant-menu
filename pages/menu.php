@@ -1,23 +1,15 @@
 <?php
 include '../connection/db.php';
 
-$ordreCategories = ["Entrées", "Plats", "Desserts"];
 
-$filter = [];
-$options = ['sort' => ['catégorie' => 1]];
-$query = new MongoDB\Driver\Query($filter, $options);
+$query = new MongoDB\Driver\Query([]);
 $rows = $mongoClient->executeQuery("$database.$collection", $query);
 $menu = iterator_to_array($rows);
 
-$categories = [];
-foreach ($ordreCategories as $ordreCategorie) {
-   $categories[$ordreCategorie] = [];
-}
+$categories = ["Entrées" => [], "Plats" => [], "Desserts" => []];
+
 foreach ($menu as $item) {
-    if (isset($categories[$item->catégorie])) {
-        $categories[$item->catégorie][] = $item;
-    }
-    
+    $categories[$item->catégorie][] = $item;
 }
 ?>
 
