@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  php-apache:
+    build: .
+    container_name: restaurant_php
+    ports:
+      -"8080:80"
+    volumes:
+      - .:var/www/html
+    environment:
+      - MONGO_DB_URI="mongodb+srv://JessV:RestauMenu2025@restaurant-menu.vatgq.mongodb.net/?retryWrites=true&w=majority&appName=restaurant-menu"

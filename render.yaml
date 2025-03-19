@@ -1,9 +1,0 @@
-services:
-  - name: restaurant-menu
-    env: static 
-    buildCommand: ""
-    startCommand: "php -S 0.0.0.0:10000"
-    plan: free
-    envVars: 
-      - key: MONGO_DB_URI
-        value: "mongodb+srv://JessV:RestauMenu2025@restaurant-menu.vatgq.mongodb.net/?retryWrites=true&w=majority&appName=restaurant-menu
