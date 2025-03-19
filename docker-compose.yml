@@ -5,6 +5,6 @@ services:
     ports:
       - "8080:80"
     volumes:
-      - .:var/www/html
+      - "/c/xampp/htdocs/restaurant_menu:/var/www/html"
     environment:
-      - MONGO_DB_URI="mongodb+srv://JessV:RestauMenu2025@restaurant-menu.vatgq.mongodb.net/?retryWrites=true&w=majority&appName=restaurant-menu"
+      - MONGO_DB_URI=mongodb+srv://JessV:RestauMenu2025@restaurant-menu.vatgq.mongodb.net/?retryWrites=true&w=majority&appName=restaurant-menu
